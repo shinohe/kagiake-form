@@ -1,15 +1,29 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h2>{{ title }}</h2>
+    <span>{{ msg }}</span>
+    <div class="frame">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd54xM2RgBeuaAismlZmR4RBDWaWUbeMJ31IulwwSud_zNwUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </div>
+      
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'HelloWorld',
+  name: 'KagiAkeForm',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      title: '鍵開け依頼フォーム',
+      msg: '※イベント外でも好みであれば開けます',
+      shareName: '',
+      twitterId: '',
+      description: ''
+    }
+  },
+  methods: {
+    send () {
     }
   }
 }
@@ -30,5 +44,19 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.frame{
+    position:relative;
+    width:100%;
+    height:0;
+    padding-top:220%;
+}
+.frame iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 </style>
