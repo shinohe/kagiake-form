@@ -2,9 +2,11 @@
   <div class="hello">
     <h2>{{ title }}</h2>
     <span>{{ msg }}</span>
+    <Ads></Ads>
     <div class="frame">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd54xM2RgBeuaAismlZmR4RBDWaWUbeMJ31IulwwSud_zNwUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
     </div>
+    <Ads></Ads>
       
   </div>
 </template>
@@ -47,16 +49,28 @@ a {
 }
 
 .frame{
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:800px;
+}
+
+.frame iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .frame{
     position:relative;
     width:100%;
     height:0;
-    padding-top:220%;
+    padding-top:840px;
+  }
+
 }
-.frame iframe{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
+
 </style>
