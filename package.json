@@ -25,7 +25,8 @@
     "sequelize": "^6.3.5",
     "vue": "^2.6.12",
     "vue-router": "^3.0.1",
-    "write-file-webpack-plugin": "^4.5.1"
+    "write-file-webpack-plugin": "^4.5.1",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
