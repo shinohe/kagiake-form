@@ -6,10 +6,11 @@
     "host": "ec2-54-211-99-192.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false,
-    "ssl": true,
     "dialectOptions": {
-        "ssl": true,
+      "ssl": {
+        "require": true,
         "rejectUnauthorized": false
+      }
     }
   },
   "test": {
@@ -19,11 +20,12 @@
     "host": "ec2-54-211-99-192.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false,
-    "ssl": true,
     "dialectOptions": {
-      "ssl": true,
-      "rejectUnauthorized": false
-  }
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
     "username": "tcswsvetfwyfxo",
@@ -32,10 +34,11 @@
     "host": "ec2-54-211-99-192.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false,
-    "ssl": true,
     "dialectOptions": {
-      "ssl": true,
-      "rejectUnauthorized": false
-  }
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
